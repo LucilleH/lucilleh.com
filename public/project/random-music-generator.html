@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+
+	<title>lucilleh.com :: Random Music Generator</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+<!--	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+-->	
+	<meta name="description" content="Lucille Hua's personal website" />
+    	<meta property="og:description" content="Lucille Hua's personal website" />
+    	<meta property="og:image" content="http://www.lucilleh.com/img/profile-small.jpg" />
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47263441-1', 'lucilleh.com');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    
+  </head>
+    <body>
+	<div class="site">
+        	<div id="header">
+			<div class="title-block">
+                        	<h1 class="title">LucilleH</h1>
+				<ul>
+					<li><a href="/">home</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="/project">projects</a></li>
+					<li><a href="/music">music</a></li>
+					<li><a href="/travel">travel</a></li>
+					<li><a href="/archive">posts</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<h1>Random Music Generator</h1>
+         		 <p class="meta">08 Jan 2014</p>
+
+<div class="post">
+<p>Most musicians write music in a spontaneous way, and melody just comes out of their brain. But sometimes when someone else requests a piece of melody, either from a friend or a prof, it feels so different -- they could run out of ideas. The purpose of this random music generator is to help me, and the rest of world, deal with those hard times, and to give us musicians some guidance.</p>
+
+<p>The Random Music Generator produces a small piece of melody each time you press &quot;start&quot; or &quot;restart&quot;, looping through the melody so that you get a sense of it before it slips away from your ear. Playing back with three different tracks (guitar, base, and drum), it gives you a better idea of how the main melody sounds along with other instruments for this specific type of music.</p>
+
+<p>An user needs to setup all parameters before generating music. There are four setup sections to complete. Tempo setup has inputs such as tempo speed, beat multiplier, beat division, whereas volume setup and tuning setup is more intuitive. Repetition setup section determines whether or not the generated melody will be stored and repeated over and over, which is controlled by the user.</p>
+
+<p><img src="../img/rmg.png" width="800px"/></p>
+
+<p>The Random Music Generator, though it&#39;s called &quot;random&quot;, it has several &quot;non-random&quot; algorithm running behind the scene. Normally, a piece of melody follows a specific rhythm pattern no matter how random the music notes are. It first generate a rhythm pattern before anything else, and then repeat this rhythm pattern over and over until you hit &quot;restart&quot;. If rhythm changes randomly, users won&#39;t be able to recognise any pattern even if the note sequence stays the same.</p>
+
+<p>Next, it produces melody based on the generated rhythm, and tuning parameter. Whether it&#39;s a A major or G minor, it adjusts itself accordingly. The melody generator uses a probabilistic model of midi note generation based on the previous generated note number. It has more of a chance to jump within 6 notes&#39; distance than to jump outside of the 6 notes&#39; distance.</p>
+
+<p>The most challenging issue is to generate music that&#39;s recognisable, humanly acceptable, and to make it sound good. Next step will be output generated music to midi files, variating melody based on music types such as blues, jazz, punk, etc. It still has a large space to improve, and I&#39;m positive that it will produce something phenomenal in the near future.</p>
+
+<h3>Downloads</h3>
+
+<p><a href="/project/software/rmg-1.0.tgz">download rmg-1.0.tgz</a>   </p>
+
+<p>Note that this software is currently available for Mac OS only.</p>
+
+</div>
+
+		</div>
+        	<div class="footer">
+            	<div class="contact">
+              	<p>
+			Music Copyright ©2014 Lucille Hua. 
+			All rights reserved.
+              	</p>
+            	</div>
+          </div>
+      </div>
+
+    </body>
+</html>
