@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/public/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/public/css/main.css">
 <!--	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 -->	
 	<meta name="description" content="Lucille Hua's personal website" />
@@ -31,23 +31,19 @@
     
   </head>
     <body>
-	<div class="site">
-        	<div id="header">
-			<div class="title-block">
-                        	<h1 class="title">LucilleH</h1>
-				<ul>
-					<li><a href="/">home</a></li>
-					<li><a href="/about">about</a></li>
-					<li><a href="/project">projects</a></li>
-					<li><a href="/music">music</a></li>
-					<li><a href="/travel">travel</a></li>
-					<li><a href="/archive">posts</a></li>
-				</ul>
-			</div>
-		</div>
+	<div id="site">
+     <div id="header">
+       <div class="title-block">
+         <img src="/public/img/circle.gif" width="150px" />
+         <h1 class="title">Lucille H</h1>
+          <ul>
+           <li><a href="/">home</a></li>
+           <li><a href="/project/index.html">projects</a></li>
+          </ul>
+       </div>
+      </div>
 		<div id="content">
 			<h1>Random Music Generator</h1>
-         		 <p class="meta">08 Jan 2014</p>
 
 <div class="post">
 <p>Most musicians write music in a spontaneous way, and melody just comes out of their brain. But sometimes when someone else requests a piece of melody, either from a friend or a prof, it feels so different -- they could run out of ideas. The purpose of this random music generator is to help me, and the rest of world, deal with those hard times, and to give us musicians some guidance.</p>
@@ -56,7 +52,7 @@
 
 <p>An user needs to setup all parameters before generating music. There are four setup sections to complete. Tempo setup has inputs such as tempo speed, beat multiplier, beat division, whereas volume setup and tuning setup is more intuitive. Repetition setup section determines whether or not the generated melody will be stored and repeated over and over, which is controlled by the user.</p>
 
-<p><img src="../img/rmg.png" width="800px"/></p>
+<p><img src="/public/img/rmg.png" width="800px"/></p>
 
 <p>The Random Music Generator, though it&#39;s called &quot;random&quot;, it has several &quot;non-random&quot; algorithm running behind the scene. Normally, a piece of melody follows a specific rhythm pattern no matter how random the music notes are. It first generate a rhythm pattern before anything else, and then repeat this rhythm pattern over and over until you hit &quot;restart&quot;. If rhythm changes randomly, users won&#39;t be able to recognise any pattern even if the note sequence stays the same.</p>
 

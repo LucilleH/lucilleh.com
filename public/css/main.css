@@ -72,6 +72,8 @@ a:visited { color: #555; }
 #home-post img {
 	float:left;
 	padding-right:15px;
+  width: 150px;
+  height: 150px;
 }
 #home-post ul {
 	list-style:none;
@@ -80,13 +82,41 @@ a:visited { color: #555; }
 #home-post ul li {
 	margin-top:10px;
 }
+
+/*animation start */
+@-webkit-keyframes load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px); }
+
+  100% {
+    opacity: 1; } 
+  }
+
+@-moz-keyframes load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px); }
+
+  100% {
+    opacity: 1; } 
+  }
+
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
 
-.site {
+#site {
   font-family: gillsans;
 }
 
@@ -145,9 +175,12 @@ a:visited { color: #555; }
 #content {
  	width:700px;
 	max-width:90%;
-        margin:auto;
-        padding:1.5em 0.1em 0.1em 0.1em;
-        color:#777777;
+  margin:auto;
+  padding:1.5em 0.1em 0.1em 0.1em;
+  color:#777777;
+  -webkit-animation: load 1s ease;
+  -moz-animation: load 1s ease;
+  animation: load 1s ease;
 }
 
 #content ul {
