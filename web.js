@@ -15,6 +15,14 @@ app.get('/project', function(req, res) {
 	res.sendfile(__dirname + '/project/index.html')
 })
 
+app.get('/project/rmg', function(req, res) {
+	res.sendfile(__dirname + '/project/random-music-generator.html')
+})
+
+app.get('/project/prosopography', function(req, res) {
+	res.sendfile(__dirname + '/project/prosopography.html')
+})
+
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
