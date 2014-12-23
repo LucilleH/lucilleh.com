@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+
+	<title>lucilleh.com :: Robotic</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/public/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/public/css/main.css">
+<!--	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+-->	
+	<meta name="description" content="Lucille Hua's personal website" />
+    	<meta property="og:description" content="Lucille Hua's personal website" />
+    	<meta property="og:image" content="http://www.lucilleh.com/img/profile-small.jpg" />
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47263441-1', 'lucilleh.com');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    
+  </head>
+    <body>
+	<div id="site">
+     <div id="header">
+       <div class="title-block">
+         <img src="/public/img/circle.gif" width="150px" />
+         <h1 class="title">Lucille H</h1>
+          <ul>
+           <li><a href="/">home</a></li>
+           <li><a href="/project/index.html">projects</a></li>
+          </ul>
+       </div>
+      </div>
+		<div id="content">
+			<h1>Exploring Motion Limitation of six-legged Swimming Robot in simulation environment</h1>
+
+<div class="post">
+<p>This is the outline of my robotics 417 graphics project. This project was required work for the Introduction to Robotics taught by Gregory Dudek. This project was submitted by Lucille Hua.</p>
+
+<h2>Introduction</h2>
+<p>The project deals with the use of periodic leg command scripting to control motions of the six flippers for a legged swimming robot. This is based on the paper <i>Learning Legged Swimming Gaits from Experience by David Meger, Juan Camilo Gamboa Higuera, Anqi Xu and Gregory Dudek, 2014.</i> The project presented a method of exploring possible motion trajectory of a six-legged hexapod swimming robot in Gazebo simulation environment with periodic leg command scripting. The experiments focus on the set of imperfect motion trajectories and investigate on the robots’ limitation. </p>
+
+<h2>Results</h2>
+<p>The robot are not able to perform the following tasks as desired:
+<ul>
+  <li>Flat straight backward – The robot is expected to swim backward direction without the change of orientation</li>
+  <li>Fix position clockwise rapid roll/yaw/pitch change – The robot is expected to stay at its current position and perform clockwise corkscrew/spin</li>
+  <li>Fix position counter clockwise rapid roll/yaw/pitch change – The robot is expected to stay at its current position and perform counter clockwise corkscrew/spin</li>
+  <li>Flat dive down – The robot is expected to stay flat when moving downwards, with the body staying parallel to the water surface</li>
+  <li>Flat dive up – The robot is expected to stay flat when moving upwards</li>
+<ul>
+<img src="/public/img/robotic-results.png" width="800px"/></p>
+
+<h2>Conclusions</h2>
+<p>
+In summary, our results indicate that there are sets of motion tasks that the six-legged swimming robot cannot complete due to its physical setup. The advantages of PLC scripting in Gazebo simulation environment is that we are able to visually observe and compare the robot’s motion with the expected trajectory in mind, and explore new motion tasks on the spot. The lack of a fix set of target destination configuration and a strict mathematical representation of the desired motion trajectory to compare with is a disadvantage of the method used. Other possible avenues for exploration include setting up mathematical model for the experiments, and conducting the experiments in real environment.
+</p>
+
+</div>
+
+		</div>
+        	<div class="footer">
+            	<div class="contact">
+              	<p>
+		              Built in Node.js. http://github.com/LucilleH/lucilleh.com
+              	</p>
+            	</div>
+          </div>
+      </div>
+
+    </body>
+</html>
