@@ -43,15 +43,15 @@
        </div>
       </div>
 		<div id="content">
-			<h1>Exploring Motion Limitation of six-legged Swimming Robot in simulation environment</h1>
+			<h3>Exploring Motion Limitation of six-legged Swimming Robot in simulation environment</h3>
 
 <div class="post">
 <p>This is the outline of my robotics 417 graphics project. This project was required work for the Introduction to Robotics taught by Gregory Dudek. This project was submitted by Lucille Hua.</p>
 
-<h2>Introduction</h2>
+<h4>Introduction</h4>
 <p>The project deals with the use of periodic leg command scripting to control motions of the six flippers for a legged swimming robot. This is based on the paper <i>Learning Legged Swimming Gaits from Experience by David Meger, Juan Camilo Gamboa Higuera, Anqi Xu and Gregory Dudek, 2014.</i> The project presented a method of exploring possible motion trajectory of a six-legged hexapod swimming robot in Gazebo simulation environment with periodic leg command scripting. The experiments focus on the set of imperfect motion trajectories and investigate on the robots’ limitation. </p>
 
-<h2>Results</h2>
+<h4>Results</h4>
 <p>The robot are not able to perform the following tasks as desired:
 <ul>
   <li>Flat straight backward – The robot is expected to swim backward direction without the change of orientation</li>
@@ -59,10 +59,10 @@
   <li>Fix position counter clockwise rapid roll/yaw/pitch change – The robot is expected to stay at its current position and perform counter clockwise corkscrew/spin</li>
   <li>Flat dive down – The robot is expected to stay flat when moving downwards, with the body staying parallel to the water surface</li>
   <li>Flat dive up – The robot is expected to stay flat when moving upwards</li>
-<ul>
-<img src="/public/img/robotic-results.png" width="800px"/></p>
+</ul>
+<img src="/public/img/robotic-results.png" width="800px" /></p>
 
-<h2>Conclusions</h2>
+<h4>Conclusions</h4>
 <p>
 In summary, our results indicate that there are sets of motion tasks that the six-legged swimming robot cannot complete due to its physical setup. The advantages of PLC scripting in Gazebo simulation environment is that we are able to visually observe and compare the robot’s motion with the expected trajectory in mind, and explore new motion tasks on the spot. The lack of a fix set of target destination configuration and a strict mathematical representation of the desired motion trajectory to compare with is a disadvantage of the method used. Other possible avenues for exploration include setting up mathematical model for the experiments, and conducting the experiments in real environment.
 </p>
